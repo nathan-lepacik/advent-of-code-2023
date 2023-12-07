@@ -17,30 +17,6 @@ public class day6 {
             return;
         }
 
-        int[] time = new int[4];
-        int[] distance = new int[4];
-
-        String[] timeInput = input.get(0).split(" ");
-        String[] distInput = input.get(1).split(" ");
-
-        int j = 0;
-        for (int i = 1; i < timeInput.length; i++) {
-            String str = timeInput[i];
-            if (!str.isBlank()) {
-                time[j] = Integer.parseInt(timeInput[i]);
-                j++;
-            }
-        }
-
-        j = 0;
-        for (int i = 1; i < distInput.length; i++) {
-            String str = distInput[i];
-            if (!str.isBlank()) {
-                distance[j] = Integer.parseInt(distInput[i]);
-                j++;
-            }
-        }
-
         System.out.println("part one: " + partOne(input));
         System.out.println("part two: " + partTwo(input));
 
